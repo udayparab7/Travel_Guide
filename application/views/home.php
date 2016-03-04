@@ -30,9 +30,9 @@
 					<!--<div class="hi-icon"><img src="<?php echo base_url(); ?>app-icons/metro.png"></div>-->
 				</div>
 				<div class="hi-icon-wrap hi-icon-effect-3 hi-icon-effect-3b">
-          <a href="<?php // echo site_url('travel/single_search');?>"><div class="hi-icon"><img src="<?php echo base_url(); ?>app-icons/search.png"></div></a>
-          <a href="<?php // echo site_url('travel/by_place');?>"><div class="hi-icon"><img src="<?php echo base_url(); ?>app-icons/range.png"></div></a>
-          <a href="<?php // echo site_url('travel/geolocation');?>"><div class="hi-icon"><img src="<?php echo base_url(); ?>app-icons/map.png"></div></a>
+          <a href="<?php echo site_url('travel/single_search');?>"><div class="hi-icon"><img src="<?php echo base_url(); ?>app-icons/search.png"></div></a>
+          <a href="<?php echo site_url('travel/by_place');?>"><div class="hi-icon"><img src="<?php echo base_url(); ?>app-icons/range.png"></div></a>
+          <a href="<?php echo site_url('travel/geolocation');?>"><div class="hi-icon"><img src="<?php echo base_url(); ?>app-icons/map.png"></div></a>
 					<div class="hi-icon" data-toggle="modal" data-target="#about"><img src="<?php echo base_url(); ?>app-icons/about.png"></div>
 					<!--<a href="#set-3" class="hi-icon hi-icon-location">Location</a>-->
 				</div>
