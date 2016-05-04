@@ -17,7 +17,8 @@
                       <p>“Travel Guide” is the perfect guide to solve necessity of the travelers.</p>
                     </div>
                     <div class="col-md-12">
-                        <p><strong>Email Id</strong> : <span>xyz@gmail.com</span></p>
+                        <p><strong>Email Id</strong> : <span>prathu.walke20@gmail.com</span></p>
+                        <p><strong>Made By</strong> : <span>Prathmesh Walke & Akshay Pawar</span></p>
                     </div>
                 </div>
             </div>

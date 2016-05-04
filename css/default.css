@@ -54,7 +54,7 @@ a {
 .container > header {
 	margin: 0 auto;
 	padding: 2em 1em 2em;
-	position: fixed;
+	/*position: fixed;*/
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -255,7 +255,7 @@ input[type='text'], select{
 }
 
 .content {
-    margin-top: 200px;
+    /*margin-top: 200px;*/
 }
 
 .chkbox {
