@@ -261,3 +261,6 @@ input[type='text'], select{
 .chkbox {
     margin: 22px 25px !important;
 }
+.modal-header h4 {
+    color: #3851BC;
+}
