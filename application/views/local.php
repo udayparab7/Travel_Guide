@@ -41,15 +41,15 @@
                     <div class="form-group">
                         <select class="form-control" name="source">
                             <option value="">Select Source</option>
-                            <?php foreach($localArray as $source){ ?>
-                            <option value="<?php echo $source; ?>"><?php echo $source ?></option>
-                            <?php } ?>
+                            <?php foreach($localArray as $source_key => $source_val){ 
+                                  echo '<option value="'.$source_key.'">'.$source_val.'</option>';
+                             } ?>
                         </select>
                         <select class="form-control" name="destination">
                             <option value="">Select Destination</option>
-                            <?php foreach($localArray as $source){ ?>
-                            <option value="<?php echo $source; ?>"><?php echo $source ?></option>
-                            <?php } ?>
+                            <?php foreach($localArray as $source_key => $source_val){ 
+                                  echo '<option value="'.$source_key.'">'.$source_val.'</option>';
+                             } ?>
                         </select>
                         <button type="submit" class="btn btn-default">Search</button>
                     </div>

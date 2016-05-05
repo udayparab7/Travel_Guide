@@ -30,5 +30,11 @@ class Travel_model extends CI_Model {
     return $query = $this->db->query("select $filter from auto_fare where km = $reading")
                     ->row_array();
   }
+  
+  public function find_fares($src,$dest,$class)
+  {
+    $sql_fares = 'SELECT '.$src.' FROM '.$class.' WHERE Station = "'.$dest.'"';
+    return $this->db->query($sql_fares)->row_array();
+  }
 }
 ?>

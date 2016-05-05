@@ -39,8 +39,8 @@
 			</div>
       
       <?php
-      $this->load->view('local',array('localArray' => $localArray));
-      $this->load->view('metro',array('metroArray' => $metroArray));
+      $this->load->view('local');
+      $this->load->view('metro');
       $this->load->view('taxi');
       $this->load->view('auto');
       $this->load->view('about');

@@ -27,7 +27,29 @@ class Travel extends CI_Controller {
   }
   public function index()
 	{
-    $data['localArray'] = array("Borivali","Kandivali","Malad","Goregaon","Jogeshwari","Andheri","Vile Parle","Santacruz","Khar Road","Bandra","Mahim","Matunga","Dadar","Elphistone Road","Lower Parel","Mahalaxmi","Mumbai Central","Grant Road","Charni Road","Marine Lines","Churchgate");
+    $data['localArray'] = array(
+      'BVI'  => 'Borivali',
+      'KILE' => 'Kandivali',
+      'MDD'  => 'Malad',
+      'GM'   => 'Goregaon',
+      'JOS'  => 'Jogeshwari',
+      'ADH'  => 'Andheri',
+      'VPL'  => 'Vile Parle',
+      'STC'  => 'Santacruz',
+      'KHR'  => 'Khar Road',
+      'BA'   => 'Bandra',
+      'MM'   => 'Mahim',
+      'MRU'  => 'Matunga',
+      'DDR'  => 'Dadar',
+      'EPR'  => 'Elphistone Road',
+      'PL'   => 'Lower Parel',
+      'MX'   => 'Mahalaxmi',
+      'MCT'  => 'Mumbai Central',
+      'GTR'  => 'Grant Road',
+      'CYR'  => 'Charni Road',
+      'MEL'  => 'Marine Lines',
+      'CCG'  => 'Churchgate');
+    
     $data['metroArray'] = array("Versova","D N Nagar","Azad Nagar","Andheri","Western Express Highway","Chakala","Airport Road","Marol Naka","Saki Naka","Asalpha","Jagruti Nagar","Ghatkopar");
 		$this->load->view('home',$data);
 	}
@@ -60,9 +82,9 @@ class Travel extends CI_Controller {
     {
       if($source != $destination)
       {
-        $result = $this->travel_model->find_train_fare($source,$destination);
-        echo 'Second class : '.$result['second_class'];
-        echo ' First class : '.$result['first_class'];
+        $fares_data = select_fares($source,$destination);
+        echo 'Second class : '.$fares_data['second'];
+        echo ' First class : '.$fares_data['first'];
       }
       else 
       {
