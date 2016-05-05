@@ -82,9 +82,10 @@ class Travel extends CI_Controller {
     {
       if($source != $destination)
       {
-        $fares_data = select_fares($source,$destination);
-        echo 'Second class : '.$fares_data['second'];
-        echo ' First class : '.$fares_data['first'];
+        $first_result = $this->travel_model->find_fares($source,$destination,'local_first');
+        $sec_result = $this->travel_model->find_fares($source,$destination,'local_second');
+        echo 'Second class : '.$sec_result[$source];
+        echo ' First class : '.$first_result[$source];
       }
       else 
       {
